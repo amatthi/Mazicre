@@ -1,4 +1,12 @@
 import React from "react";
+import {
+  Carousel,
+  Jumbotron,
+  Grid,
+  Row,
+  Col,
+  PageHeader
+} from "react-bootstrap";
 
 export default function Welcome(props) {
   const createNewForm = () => {
@@ -9,23 +17,47 @@ export default function Welcome(props) {
 
   return (
     <div>
-      <div className="jumbotron background">
-        <div className="container">
-          <h1>Create your own forms</h1>
-          <p>
-            This is the <strong>Kinto formbuilder</strong>, a tool to help you
-            create online forms easily.
-          </p>
-          <p>
-            <button
-              type="button"
-              onClick={createNewForm}
-              className="btn btn-primary btn-lg"
-            >
-              Start a new form
-            </button>
-          </p>
-        </div>
+      <div className="background-container">
+        <Carousel>
+          <Carousel.Item>
+            <div className="carousel-image" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className="carousel-image-1" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className="carousel-image-2" />
+          </Carousel.Item>
+        </Carousel>
+      </div>
+      <div className="jumbotron-container">
+        <Jumbotron>
+          <div className="container">
+            <Grid>
+              <Row>
+                <Col xs={12} md={8}>
+                  <PageHeader className="jumbotron-pageheader">
+                    Management software<br />for the new world of CRE.
+                  </PageHeader>
+                  <p>
+                    Eliminate slippage and boost productivity - all the due
+                    diligence tools you need and use, seamlessly integrated in
+                    one package.
+                  </p>
+                  <p>
+                    <button
+                      type="button"
+                      onClick={createNewForm}
+                      className="btn btn-primary btn-lg"
+                    >
+                      Start a new form
+                    </button>
+                  </p>
+                </Col>
+              </Row>
+            </Grid>
+          </div>
+        </Jumbotron>
       </div>
       <div className="container">
         <div className="row">

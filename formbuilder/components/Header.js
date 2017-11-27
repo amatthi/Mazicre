@@ -28,11 +28,11 @@ class Header extends Component {
       default:
         var styles_2 = {
           loginBase: {
-            color: "#454441",
+            color: "#666",
             fontSize: "16px",
 
             ":hover": {
-              color: "#47BE94",
+              color: "#212121",
               background: "#fff",
               fontSize: "16px"
             }
@@ -42,11 +42,6 @@ class Header extends Component {
           <li key="1">
             <a href="/api/logout" className="" style={styles_2.loginBase}>
               Logout
-            </a>
-          </li>,
-          <li key="2">
-            <a href="/#/builder" className="" style={styles_2.loginBase}>
-              New
             </a>
           </li>
         ];
@@ -62,9 +57,21 @@ class Header extends Component {
         width: "auto"
       },
       logo: {
-        padding: "0 0 0 25px",
         height: "60px",
         width: "auto"
+      }
+    };
+
+    var styles_2 = {
+      loginBase: {
+        color: "#454441",
+        fontSize: "16px",
+
+        ":hover": {
+          color: "#47BE94",
+          background: "#fff",
+          fontSize: "16px"
+        }
       }
     };
 
@@ -89,6 +96,11 @@ class Header extends Component {
         <Navbar.Collapse>
           <Nav pullRight>
             <NavItem>{this.renderContent()}</NavItem>
+          </Nav>
+          <Nav pullRight>
+            <NavItem href="/#/builder" style={styles_2.loginBase}>
+              Create New Project
+            </NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

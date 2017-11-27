@@ -47,9 +47,8 @@
   margin-left: 50px;
 }
 
-
 .editable-field {
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
 
 .editable-field:hover {
@@ -115,12 +114,55 @@ textarea.json-viewer {
 }
 
 .field-list-entry:active {
-  background: #F7F7F7;
-  box-shadow: inset 0 -2px 2px -2px rgba(0, 0, 0, .3);
+  background: #f7f7f7;
+  box-shadow: inset 0 -2px 2px -2px rgba(0, 0, 0, 0.3);
 }
 
 .glyphicon + span {
-  margin-left: .5em;
+  margin-left: 0.5em;
+}
+
+.background-container {
+  padding-top: 65px;
+  position: relative;
+}
+
+.jumbotron-container {
+  position: absolute;
+  top: 65px;
+  width: 100%;
+}
+
+.jumbotron {
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top: 125px;
+  }
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: Roboto;
+}
+
+.jumbotron p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Roboto;
+}
+
+.navbar {
+  min-height: 5em;
+}
+
+.navbar-brand {
+  padding: 2px 0 0 0;
 }
 
 .dropzone-active {
@@ -133,7 +175,7 @@ textarea.json-viewer {
   padding: 50px 20px;
 }
 
-.dropzone-active p{
+.dropzone-active p {
   text-align: center;
   margin: auto;
   height: 100px;
@@ -165,10 +207,47 @@ span.edit-in-place:hover {
   margin-bottom: 30px;
 }
 
+.carousel-image {
+  background-image: url(https://s3.amazonaws.com/mazicre/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  min-width: 1200px;
+  filter: brightness(50%);
+}
+
+.carousel-image-1 {
+  background-image: url(https://s3.amazonaws.com/mazicre/background-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  min-width: 1200px;
+  filter: brightness(50%);
+}
+
+.carousel-image-2 {
+  background-image: url(https://s3.amazonaws.com/mazicre/background-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  min-width: 1200px;
+  filter: brightness(50%);
+}
+
+.carousel-control {
+  display: none;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
 .background {
-  background-image: url(assets/background.jpg);
-  background-position: bottom;
+  background-image: url(https://s3.amazonaws.com/mazicre/background.jpg);
   color: white !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 300px;
 }
 
 .background h1 {
