@@ -5,7 +5,9 @@ import {
   Grid,
   Row,
   Col,
-  PageHeader
+  PageHeader,
+  Button,
+  Image
 } from "react-bootstrap";
 
 export default function Welcome(props) {
@@ -44,14 +46,14 @@ export default function Welcome(props) {
                     diligence tools you need and use, seamlessly integrated in
                     one package.
                   </p>
-                  <p>
-                    <button
-                      type="button"
+                  <p className="jumbotron-button">
+                    <Button
+                      bsSize="Large"
+                      bsStyle="primary-1"
                       onClick={createNewForm}
-                      className="btn btn-primary btn-lg"
                     >
-                      Start a new form
-                    </button>
+                      Get started now
+                    </Button>
                   </p>
                 </Col>
               </Row>
@@ -60,47 +62,57 @@ export default function Welcome(props) {
         </Jumbotron>
       </div>
       <div className="container">
-        <div className="row">
-          <div className="col-md-4">
-            <h3>
-              <i className="glyphicon glyphicon-eye-close" /> Privacy matters
-            </h3>
-            <p>
-              With <a href="http://www.kinto-storage.org">Kinto</a>, you are not
-              giving Google or any other giants your data.
-            </p>
-            <p>
-              Our goal is not to host all the forms of the world, so we try to
-              make it easy for you to{" "}
-              <a href="https://kinto.readthedocs.io/en/stable/tutorials/install.html">
-                host your own servers
-              </a>.
-            </p>
-          </div>
-          <div className="col-md-4">
-            <h3>
-              <i className="glyphicon glyphicon-heart-empty" /> Open source
-            </h3>
-            <p>
-              All the code we write is{" "}
-              <a href="https://github.com/kinto/formbuilder">
-                written in the open
-              </a>{" "}
-              and we try to be the most inclusive as we can to welcome your
-              ideas.
-            </p>
-            <p>
-              Kinto and the formbuilder are released under Apache 2.0 licenses
-            </p>
-          </div>
-          <div className="col-md-4">
-            <h3>
-              <i className="glyphicon glyphicon-saved" /> Account-less
-            </h3>
-            <p>
-              You don't need an account to create a new form: just create and
-              give it to your friends, it's a matter of minutes!
-            </p>
+        <Grid>
+          <Row>
+            <Col xs={12} md={10} mdOffset={1}>
+              <div className="section">
+                <h2>
+                  People power projects.<br />
+                  We power people.
+                </h2>
+                <p>Welcome to the people platform</p>
+              </div>
+            </Col>
+          </Row>
+        </Grid>
+      </div>
+      <div className="container-1">
+        <div className="section-1">
+          <div className="section-img">
+            <Grid>
+              <Row>
+                <Col xs={12}>
+                  <Image
+                    src="https://s3.amazonaws.com/mazicre/Home_Section-platform-2x.png"
+                    responsive
+                  />
+                </Col>
+                <Col xs={12} md={5} mdOffset={7} className="section-text">
+                  <div className="section-h3">
+                    <h3>
+                      Flexible and comprehensive.
+                      <br />
+                      We are thinking you need both.
+                    </h3>
+
+                    <p>
+                      The world of commercial real estate is complex.<br />That
+                      is why we built a flexible platform for the entire<br />CRE
+                      ecosystem -- to let you use the tools you need.
+                    </p>
+                    <p className="jumbotron-button-1">
+                      <Button
+                        bsSize="Large"
+                        bsStyle="primary-2"
+                        onClick={createNewForm}
+                      >
+                        Get started now
+                      </Button>
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </Grid>
           </div>
         </div>
       </div>
