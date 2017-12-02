@@ -100,19 +100,61 @@ export default function Welcome(props) {
                       is why we built a flexible platform for the entire<br />CRE
                       ecosystem -- to let you use the tools you need.
                     </p>
-                    <p className="jumbotron-button-1">
-                      <Button
-                        bsSize="Large"
-                        bsStyle="primary-2"
-                        onClick={createNewForm}
-                      >
-                        Get started now
-                      </Button>
-                    </p>
                   </div>
                 </Col>
               </Row>
             </Grid>
+          </div>
+        </div>
+      </div>
+      <div className="container-2">
+        <div className="section-img-1">
+          <Grid>
+            <Row>
+              <Col xs={12} />
+              <Col xs={12} md={7} className="section-text-1">
+                <div className="section-h4">
+                  <h3>
+                    One place for due diligence.
+                    <br />
+                    All your tools and tasks.
+                    <br />
+                    The new workflow for CRE.
+                  </h3>
+
+                  <p>
+                    We give each person on our platform a platform of their own
+                    — a place to sync their unique identity with all the tools
+                    they need, and all the tasks they need to complete,
+                    seamlessly. It is intuitive, automated, and comprehensive,
+                    so nothing stands in the way of your workflow, whatever that
+                    means for you.
+                  </p>
+                  <p className="jumbotron-button-1">
+                    <Button
+                      bsSize="Large"
+                      bsStyle="primary-2"
+                      onClick={createNewForm}
+                    >
+                      sign onward
+                    </Button>
+                  </p>
+                </div>
+              </Col>
+            </Row>
+          </Grid>
+        </div>
+        <div className="section-3">
+          <Image
+            src="https://s3.amazonaws.com/mazicre/Mazi-section_3.png"
+            responsive
+          />
+          <div className="section-img2-div">
+            <Image
+              className="section-img2"
+              src="https://s3.amazonaws.com/mazicre/Mazi-section_3.2.png"
+              responsive
+            />
           </div>
         </div>
       </div>
