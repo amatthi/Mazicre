@@ -47,6 +47,12 @@ p {
   color: #3e3d3b;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+
 /* Override default navbar
    Prevent first form element dropdown menu to get out of the viewport */
 .navbar {
@@ -149,10 +155,51 @@ textarea.json-viewer {
   background-color: transparent;
 }
 
+#basic-nav-dropdown {
+}
+
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 125px;
+    padding-top: 100px;
   }
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #666;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #2cbe8d;
+}
+
+.login-link {
+  color: #666;
+  border-bottom: 2px solid #2cbe8d;
+  padding-bottom: 2px;
+}
+
+.login-link:hover {
+  color: #2cbe8d;
+  border-bottom: 2px solid #2cbe8d;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #2cbe8d;
+  text-transform: none;
+}
+
+.btn-primary:hover {
+  background-color: #3a9f7e;
+}
+
+.btn-primary:active {
+  background-color: #3a9f7e;
+}
+
+.btn-primary:focus {
+  background-color: #3a9f7e;
 }
 
 .jumbotron h1 {
@@ -185,7 +232,6 @@ textarea.json-viewer {
 }
 
 .section-img2-div {
-  padding-top: 250px;
 }
 
 .section-img2 {
@@ -241,12 +287,12 @@ textarea.json-viewer {
 }
 
 .section-3 img {
-  max-height: 1000px;
+  max-height: 800px;
   float: right;
 }
 
 .section-img {
-  padding-top: 160px;
+  padding-top: 100px;
 }
 
 .section-h3 {
@@ -260,6 +306,10 @@ textarea.json-viewer {
   font-weight: 500;
 }
 
+.img-2 img {
+  max-height: 600px;
+}
+
 .section-h3 p {
   color: #fff;
   font-size: 18px;
@@ -270,7 +320,7 @@ textarea.json-viewer {
 
 .section-h4 {
   left: 0;
-  padding-left: 25px;
+  padding-left: 50px;
 }
 
 .section-h4 h3 {
@@ -290,6 +340,11 @@ textarea.json-viewer {
   margin-top: -350px;
 }
 
+.container-4 {
+  width: 100%;
+  background-color: #2cbe8d;
+}
+
 .section-text-1 {
   padding-top: 50px;
   padding-left: 100px;
@@ -303,6 +358,7 @@ textarea.json-viewer {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
+  height: 45px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -310,6 +366,7 @@ textarea.json-viewer {
   background-color: #2cbe8d;
   color: #fff;
   font-size: 18px;
+  height: 45px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
 }
@@ -338,6 +395,16 @@ textarea.json-viewer {
 
 .navbar-brand {
   padding: 2px 0 0 0;
+}
+
+.navbar-header {
+  padding-right: 100px;
+}
+
+@media (min-width: 768px) {
+  .navbar > .container .navbar-brand {
+    margin-left: 0px;
+  }
 }
 
 .dropzone-active {
@@ -380,6 +447,14 @@ span.edit-in-place:hover {
 
 .builder-inner-actions {
   margin-bottom: 30px;
+}
+
+.carousel {
+  min-height: 600px;
+}
+
+.btn {
+  line-height: 1.546;
 }
 
 .carousel-image {

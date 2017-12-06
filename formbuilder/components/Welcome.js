@@ -19,51 +19,53 @@ export default function Welcome(props) {
 
   return (
     <div>
-      <div className="background-container">
-        <Carousel>
-          <Carousel.Item>
-            <div className="carousel-image" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="carousel-image-1" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="carousel-image-2" />
-          </Carousel.Item>
-        </Carousel>
-      </div>
-      <div className="jumbotron-container">
-        <Jumbotron>
-          <div className="container">
-            <Grid>
-              <Row>
-                <Col xs={12} md={8}>
-                  <PageHeader className="jumbotron-pageheader">
-                    Management software<br />for the new world of CRE.
-                  </PageHeader>
-                  <p>
-                    Eliminate slippage and boost productivity - all the due
-                    diligence tools you need and use, seamlessly integrated in
-                    one package.
-                  </p>
-                  <p className="jumbotron-button">
-                    <Button
-                      bsSize="Large"
-                      bsStyle="primary-1"
-                      onClick={createNewForm}
-                    >
-                      Get started now
-                    </Button>
-                  </p>
-                </Col>
-              </Row>
-            </Grid>
+      <Grid>
+        <Row>
+          <div className="background-container">
+            <Carousel>
+              <Carousel.Item>
+                <div className="carousel-image" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="carousel-image-1" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="carousel-image-2" />
+              </Carousel.Item>
+            </Carousel>
           </div>
-        </Jumbotron>
-      </div>
-      <div className="container">
-        <Grid>
-          <Row>
+          <div className="jumbotron-container">
+            <Jumbotron>
+              <div className="container">
+                <Grid>
+                  <Row>
+                    <Col xs={12} md={6} mdOffset={2}>
+                      <PageHeader className="jumbotron-pageheader">
+                        Management software<br />for the new world of CRE.
+                      </PageHeader>
+                      <p>
+                        Eliminate slippage and boost productivity - all the due
+                        diligence tools you need and use, seamlessly integrated
+                        in one package.
+                      </p>
+                      <p className="jumbotron-button">
+                        <Button
+                          bsSize="large"
+                          bsStyle="primary-1"
+                          onClick={createNewForm}
+                        >
+                          Get started now
+                        </Button>
+                      </p>
+                    </Col>
+                  </Row>
+                </Grid>
+              </div>
+            </Jumbotron>
+          </div>
+        </Row>
+        <Row>
+          <div className="container">
             <Col xs={12} md={10} mdOffset={1}>
               <div className="section">
                 <h2>
@@ -73,19 +75,14 @@ export default function Welcome(props) {
                 <p>Welcome to the people platform</p>
               </div>
             </Col>
-          </Row>
-        </Grid>
-      </div>
-      <div className="container-1">
-        <div className="section-1">
-          <div className="section-img">
-            <Grid>
-              <Row>
-                <Col xs={12}>
-                  <Image
-                    src="https://s3.amazonaws.com/mazicre/Home_Section-platform-2x.png"
-                    responsive
-                  />
+          </div>
+          <div className="container-1">
+            <div className="section-1">
+              <div className="section-img">
+                <Col xs={12} md={10} mdOffset={1}>
+                  <div className="img-2">
+                    <Image src="https://s3.amazonaws.com/mazicre/Home_Section-platform-2x.png" />
+                  </div>
                 </Col>
                 <Col xs={12} md={5} mdOffset={7} className="section-text">
                   <div className="section-h3">
@@ -102,16 +99,13 @@ export default function Welcome(props) {
                     </p>
                   </div>
                 </Col>
-              </Row>
-            </Grid>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="container-2">
-        <div className="section-img-1">
-          <Grid>
-            <Row>
-              <Col xs={12} />
+        </Row>
+        <Row>
+          <div className="container-2">
+            <div className="section-img-1">
               <Col xs={12} md={7} className="section-text-1">
                 <div className="section-h4">
                   <h3>
@@ -132,7 +126,7 @@ export default function Welcome(props) {
                   </p>
                   <p className="jumbotron-button-1">
                     <Button
-                      bsSize="Large"
+                      bsSize="large"
                       bsStyle="primary-2"
                       onClick={createNewForm}
                     >
@@ -141,23 +135,28 @@ export default function Welcome(props) {
                   </p>
                 </div>
               </Col>
-            </Row>
-          </Grid>
-        </div>
-        <div className="section-3">
-          <Image
-            src="https://s3.amazonaws.com/mazicre/Mazi-section_3.png"
-            responsive
-          />
-          <div className="section-img2-div">
-            <Image
-              className="section-img2"
-              src="https://s3.amazonaws.com/mazicre/Mazi-section_3.2.png"
-              responsive
-            />
+            </div>
+            <div className="section-3">
+              <Image
+                src="https://s3.amazonaws.com/mazicre/Mazi-section_3.png"
+                responsive
+              />
+              <div className="section-img2-div">
+                <Image
+                  className="section-img2"
+                  src="https://s3.amazonaws.com/mazicre/Mazi-section_3.2.png"
+                  responsive
+                />
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+        </Row>
+        <Row>
+          <div className="container-4">
+            <div>Hello</div>
+          </div>
+        </Row>
+      </Grid>
     </div>
   );
 }

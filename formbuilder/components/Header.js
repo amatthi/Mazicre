@@ -1,7 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "react-router";
 import { connect } from "react-redux";
-import { Navbar, Nav, NavItem } from "react-bootstrap";
+import {
+  Navbar,
+  Nav,
+  NavItem,
+  NavDropdown,
+  MenuItem,
+  Button
+} from "react-bootstrap";
 
 class Header extends Component {
   renderContent() {
@@ -9,39 +16,16 @@ class Header extends Component {
       case null:
         return;
       case false:
-        var styles_1 = {
-          loginBase: {
-            color: "#454441",
-
-            ":hover": {
-              color: "red"
-            }
-          }
-        };
         return (
           <li>
-            <a href="/auth/google" className="" style={styles_1.loginBase}>
-              Login With Google
-            </a>
+            <a href="/auth/google">Login</a>
           </li>
         );
       default:
-        var styles_2 = {
-          loginBase: {
-            color: "#666",
-            fontSize: "16px",
-
-            ":hover": {
-              color: "#212121",
-              background: "#fff",
-              fontSize: "16px"
-            }
-          }
-        };
         return [
           <li key="1">
-            <a href="/api/logout" className="" style={styles_2.loginBase}>
-              Logout
+            <a href="/api/logout" className="login-link">
+              <span>Logout</span>
             </a>
           </li>
         ];
@@ -59,19 +43,6 @@ class Header extends Component {
       logo: {
         height: "60px",
         width: "auto"
-      }
-    };
-
-    var styles_2 = {
-      loginBase: {
-        color: "#454441",
-        fontSize: "16px",
-
-        ":hover": {
-          color: "#47BE94",
-          background: "#fff",
-          fontSize: "16px"
-        }
       }
     };
 
@@ -94,12 +65,26 @@ class Header extends Component {
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav pullRight>
-            <NavItem>{this.renderContent()}</NavItem>
+          <Nav>
+            <NavDropdown eventKey={3} title="Overview" id="basic-nav-dropdown">
+              <MenuItem eventKey={3.1}>Item 1</MenuItem>
+              <MenuItem eventKey={3.2}>Item 2</MenuItem>
+              <MenuItem eventKey={3.3}>Item 3</MenuItem>
+              <MenuItem eventKey={3.4}>Item 4</MenuItem>
+              <MenuItem eventKey={3.5}>Item 5</MenuItem>
+              <MenuItem eventKey={3.6}>Item 6</MenuItem>
+            </NavDropdown>
+            <NavItem>Customers</NavItem>
+            <NavItem>Pricing</NavItem>
           </Nav>
           <Nav pullRight>
-            <NavItem href="/#/builder" style={styles_2.loginBase}>
-              Create New Project
+            <NavItem>{this.renderContent()}</NavItem>
+            <NavItem href="/#/builder">
+              <div className="demo">
+                <Button bsStyle="primary" bsSize="small">
+                  Try Demo
+                </Button>
+              </div>
             </NavItem>
           </Nav>
         </Navbar.Collapse>
