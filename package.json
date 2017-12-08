@@ -33,6 +33,7 @@
     "react-dom": "^15.6.2",
     "react-drag-and-drop": "^2.0.1",
     "react-jsonschema-form": "^0.40.0",
+    "react-materialize": "^1.1.0",
     "react-redux": "^4.0.6",
     "react-router": "^1.0.3",
     "react-router-dom": "^4.2.2",

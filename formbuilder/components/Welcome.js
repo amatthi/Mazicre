@@ -51,10 +51,10 @@ export default function Welcome(props) {
                       <p className="jumbotron-button">
                         <Button
                           bsSize="large"
-                          bsStyle="primary-1"
+                          bsStyle="primary"
                           onClick={createNewForm}
                         >
-                          Get started now
+                          Get Started Now
                         </Button>
                       </p>
                     </Col>
@@ -127,10 +127,10 @@ export default function Welcome(props) {
                   <p className="jumbotron-button-1">
                     <Button
                       bsSize="large"
-                      bsStyle="primary-2"
+                      bsStyle="primary"
                       onClick={createNewForm}
                     >
-                      sign onward
+                      Sign Onward
                     </Button>
                   </p>
                 </div>
@@ -141,20 +141,29 @@ export default function Welcome(props) {
                 src="https://s3.amazonaws.com/mazicre/Mazi-section_3.png"
                 responsive
               />
-              <div className="section-img2-div">
-                <Image
-                  className="section-img2"
-                  src="https://s3.amazonaws.com/mazicre/Mazi-section_3.2.png"
-                  responsive
-                />
-              </div>
+            </div>
+            <div className="section-img2-div">
+              <Image
+                className="section-img2"
+                src="https://s3.amazonaws.com/mazicre/Mazi-section_3.2.png"
+                responsive
+              />
             </div>
           </div>
         </Row>
         <Row>
-          <div className="container-4">
-            <div>Hello</div>
-          </div>
+          <Col xs={12} className="container-4">
+            <Col xs={6} xsOffset={1} className="footer">
+              <img
+                src={
+                  "https://s3-us-west-2.amazonaws.com/austin-matthiessen/Mazi_logo_1.jpg"
+                }
+                className="responsive-img footer-img"
+                width={"50%"}
+                alt={"Mazi"}
+              />
+            </Col>
+          </Col>
         </Row>
       </Grid>
     </div>

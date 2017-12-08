@@ -224,6 +224,7 @@ textarea.json-viewer {
 
 .jumbotron-button-1 {
   padding-top: 15px;
+  padding-left: 50px;
 }
 
 .section {
@@ -232,11 +233,20 @@ textarea.json-viewer {
 }
 
 .section-img2-div {
+  padding-top: 400px;
 }
 
 .section-img2 {
   float: left !important;
   max-height: 700px !important;
+}
+
+.footer {
+  padding-top: 50px;
+}
+
+.footer-img {
+  max-width: 100px;
 }
 
 .section h2 {
